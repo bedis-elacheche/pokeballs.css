@@ -16,7 +16,7 @@ Pokéballs.css, pokéballs recreated in pure CSS
   - This project was basically created for educational purposes, so I can get a deep touch with SASS.
 
 ## Installation
-- Clone the repo: `²git clone git@github.com:bedis-elacheche/pokeballs.css.git`.
+- Clone the repo: `git clone git@github.com:bedis-elacheche/pokeballs.css.git`.
 
 ## What's included
 ### Types
@@ -150,9 +150,9 @@ You can animate pokéballs as well. Adding `pb-rotate` class will give this rota
 ![alt tag](https://raw.github.com/bedis-elacheche/pokeballs.css/master/img/pb_rotate.gif)
 
 ## Licensing
-Pokéballs.css is an open source project released under a permisive [http://opensource.org/licenses/mit-license.html](MIT license). This means you can use it in your own personal or commercial projects for free. MIT is the same license used by such popular projects as jQuery and Ruby on Rails.
+Pokéballs.css is an open source project released under a permisive [MIT license](http://opensource.org/licenses/mit-license.html). This means you can use it in your own personal or commercial projects for free. MIT is the same license used by such popular projects as jQuery and Ruby on Rails.
 
-**Angella Font** is free for personal use. Check [http://www.studiotypo.com/Angella_font](their website) for further informations about the font.
+**Angella Font** is free for personal use. Check [their website](http://www.studiotypo.com/Angella_font) for further informations about the font.
 
 ## Contributing
 - Documentation
@@ -166,12 +166,12 @@ Pokéballs.css is an open source project released under a permisive [http://open
 - Fork this repo to your own git
 - Make your changes
 - Submit a pull request with full remarks documenting your changes
-- Pull request MAY then be accepted by project creators
+- Pull request MAY then be accepted
 
 ## Tell Me Thanks
 
 ![alt tag](https://raw.github.com/bedis-elacheche/pokeballs.css/master/img/coffee.png)
 
 Hopefully you think this project is awesome. If you'd like, here are a couple of ways you can tell me thanks for all my hard work. Your support is needed!
-- [https://gratipay.com/~elacheche-bedis](Tip me on Gratipay)
+- [Tip me on Gratipay](https://gratipay.com/~elacheche-bedis)
 - Bitcoin: 1PgaRL1qNRXrgkKQmBfxkuXWJaAJFSPBHw
