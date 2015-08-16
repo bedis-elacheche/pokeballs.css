@@ -1,0 +1,32 @@
+$gradients: ( 
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        $color-down 55%
+    ),
+    repeating-linear-gradient(
+        45deg,
+        transparent 47%,
+        $color-net-emperor 47%,
+        $color-net-emperor 54%,
+        transparent 54%,
+        transparent
+    ),
+    repeating-linear-gradient(
+        -45deg,
+        transparent 47%,
+        $color-net-emperor 47%,
+        $color-net-emperor 54%,
+        transparent 54%,
+        transparent
+    )
+);
+
+.#{$pb-namespace}-net{
+    background-color: $color-net-tradewind;
+    @include css3-gradients($gradients);
+    @include background-size(#{100% 100%, 60% 60%, 60% 60%});
+    background-position: 0% 0%, -25% -25%, 125% -25%;
+}

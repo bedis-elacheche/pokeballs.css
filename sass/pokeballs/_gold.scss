@@ -1,0 +1,18 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-gold-sep 45%,
+        $color-gold-sep 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}-gold{
+    background-color: $color-gold;
+    @include css3-gradients($gradients);
+    &::after {
+        background-color: $color-gold;
+        border-color: $color-gold-sep;
+    }
+}

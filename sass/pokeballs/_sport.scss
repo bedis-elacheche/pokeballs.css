@@ -1,0 +1,33 @@
+$gradients: (
+    radial-gradient(
+        circle,
+        $color-sport-yellow 10%,
+        transparent 12%
+    ),
+    linear-gradient(
+        to bottom,
+        transparent 17%,
+        $color-sport-orange 17%,
+        $color-sport-orange 22%,
+        transparent 22%,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        $color-down 55%
+    ),
+    radial-gradient(
+        circle,
+        transparent 25%,
+        $color-sport-yellow 27%,
+        $color-sport-yellow 35%,
+        transparent 37%
+    )
+);
+
+.#{$pb-namespace}-sport{
+    background-color: $color-sport-orange;
+    @include css3-gradients($gradients);
+    @include background-size(#{50% 50%, 100%, 50% 50%});
+    background-repeat: no-repeat, repeat-x, no-repeat;
+    background-position: 50% -12.5%, 0% 0%, 50% -12.5%;
+}

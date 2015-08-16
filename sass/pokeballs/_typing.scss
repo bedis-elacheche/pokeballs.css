@@ -1,0 +1,21 @@
+$gradients:( 
+    linear-gradient(
+        to bottom,
+        $color-typing-blue 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        transparent 55%
+    ),
+    linear-gradient(
+        to left,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}-typing{
+    background-color: $color-typing-orange;
+    @include css3-gradients($gradients);
+}

@@ -1,0 +1,72 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        $color-up 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}{
+    background-color: $color-down;
+    @include css3-gradients($gradients);
+    display: inline-block;
+    position: relative;
+    width: $pb-width;
+    height: $pb-width;
+    @include border-radius(100%);
+    @include box-shadow($pb-shadow-xOffset, $pb-shadow-yOffset, $pb-shadow-blur, $color-shadow, true);
+    font-size: $pb-font-size;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 35%;
+        left: 35%;
+        bottom: 35%;
+        right: 35%;
+        @include border-radius(100%);
+        background-color: $color-btn;
+        border: $pb-btn-border solid $color-sep;
+    }
+}
+
+.#{$pb-namespace}-2x {
+    width: $pb-width * 2;
+    height: $pb-width * 2;
+    font-size: $pb-font-size * 2;
+    @include box-shadow($pb-shadow-xOffset * 2, $pb-shadow-yOffset * 2, $pb-shadow-blur * 2, $color-shadow, true);
+    &::after {
+        border-width: $pb-btn-border * 2;
+    }
+}
+
+.#{$pb-namespace}-3x {
+    width: $pb-width * 3;
+    height: $pb-width * 3;
+    font-size: $pb-font-size * 3;
+    @include box-shadow($pb-shadow-xOffset * 3, $pb-shadow-yOffset * 3, $pb-shadow-blur * 3, $color-shadow, true);
+    &::after {
+        border-width: $pb-btn-border * 3;
+    }
+}
+
+.#{$pb-namespace}-4x {
+    width: $pb-width * 4;
+    height: $pb-width * 4;
+    font-size: $pb-font-size * 4;
+    @include box-shadow($pb-shadow-xOffset * 4, $pb-shadow-yOffset * 4, $pb-shadow-blur * 4, $color-shadow, true);
+    &::after {
+        border-width: $pb-btn-border * 4;
+    }
+}
+
+.#{$pb-namespace}-5x {
+    width: $pb-width * 5;
+    height: $pb-width * 5;
+    font-size: $pb-font-size * 5;
+    @include box-shadow($pb-shadow-xOffset * 5, $pb-shadow-yOffset * 5, $pb-shadow-blur * 5, $color-shadow, true);
+    &::after {
+        border-width: $pb-btn-border * 5;
+    }
+}

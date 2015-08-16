@@ -1,0 +1,24 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        $color-down 55%
+    ),
+    radial-gradient(
+        circle,
+        $color-repeat-grey 43%,
+        $color-repeat-yellow 45%,
+        $color-repeat-yellow 70%,
+        transparent 72%
+    )
+);
+
+.#{$pb-namespace}-repeat{
+    background-color: $color-up;
+    @include css3-gradients($gradients);
+    @include background-size(#{100% 100%, 50% 50%});
+    background-repeat: repeat-x, repeat-y;
+    background-position: 0% 0%, 50% 50%;
+}

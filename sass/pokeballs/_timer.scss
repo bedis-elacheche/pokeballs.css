@@ -1,0 +1,39 @@
+$gradients: (
+    linear-gradient(
+        to left,
+        transparent 45%,
+        $color-timer-red 45%,
+        $color-timer-red 55%,
+        transparent 55%
+    ),
+    radial-gradient(
+        $color-timer-red 48%,
+        transparent 51.5%
+    ),
+    radial-gradient(
+        $color-timer-grey 50%,
+        transparent 51%
+    ),
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        transparent 55%
+    ),
+    radial-gradient(
+        ellipse,
+        transparent 49%,
+        $color-timer-red 50%,
+        $color-timer-red 59%,
+        transparent 60%
+    )
+);
+
+.#{$pb-namespace}-timer{
+    background-color: $color-down;
+    @include css3-gradients($gradients);
+    @include background-size(#{100% 25%, 14% 15%, 125% 89%, 100% 100%, 130% 175%});
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 50% 20%, 50% -500%, 0% 0%, 50% 25%;
+}

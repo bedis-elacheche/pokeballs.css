@@ -1,0 +1,527 @@
+@font-face {
+  font-family: 'AngellaDemo';
+  src: url("../font/Angella_demo.otf") format("opentype");
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+  }
+}
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotate(-20deg);
+  }
+  50% {
+    -moz-transform: rotate(20deg);
+  }
+  100% {
+    -moz-transform: rotate(-20deg);
+  }
+}
+@-ms-keyframes rotate {
+  0% {
+    -ms-transform: rotate(-20deg);
+  }
+  50% {
+    -ms-transform: rotate(20deg);
+  }
+  100% {
+    -ms-transform: rotate(-20deg);
+  }
+}
+@-o-keyframes rotate {
+  0% {
+    -o-transform: rotate(-20deg);
+  }
+  50% {
+    -o-transform: rotate(20deg);
+  }
+  100% {
+    -o-transform: rotate(-20deg);
+  }
+}
+.pb-rotate {
+  -webkit-animation: rotate 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite forwards;
+  -moz-animation: rotate 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite forwards;
+  -ms-animation: rotate 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite forwards;
+  -o-animation: rotate 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite forwards;
+  animation: rotate 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite forwards;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.pb {
+  background-color: #f6f7f8;
+  background-image: -webkit-linear-gradient(to bottom, #EF4144 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, #EF4144 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, #EF4144 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, #EF4144 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, #EF4144 45%, #191919 45%, #191919 55%, transparent 55%);
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: inset -5px -5px 8px rgba(48, 45, 45, 0.5);
+  -moz-box-shadow: inset -5px -5px 8px rgba(48, 45, 45, 0.5);
+  -ms-box-shadow: inset -5px -5px 8px rgba(48, 45, 45, 0.5);
+  -o-box-shadow: inset -5px -5px 8px rgba(48, 45, 45, 0.5);
+  box-shadow: inset -5px -5px 8px rgba(48, 45, 45, 0.5);
+  font-size: 5px;
+}
+.pb::after {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  bottom: 35%;
+  right: 35%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #EEEFF0;
+  border: 2px solid #191919;
+}
+
+.pb-2x {
+  width: 80px;
+  height: 80px;
+  font-size: 10px;
+  -webkit-box-shadow: inset -10px -10px 16px rgba(48, 45, 45, 0.5);
+  -moz-box-shadow: inset -10px -10px 16px rgba(48, 45, 45, 0.5);
+  -ms-box-shadow: inset -10px -10px 16px rgba(48, 45, 45, 0.5);
+  -o-box-shadow: inset -10px -10px 16px rgba(48, 45, 45, 0.5);
+  box-shadow: inset -10px -10px 16px rgba(48, 45, 45, 0.5);
+}
+.pb-2x::after {
+  border-width: 4px;
+}
+
+.pb-3x {
+  width: 120px;
+  height: 120px;
+  font-size: 15px;
+  -webkit-box-shadow: inset -15px -15px 24px rgba(48, 45, 45, 0.5);
+  -moz-box-shadow: inset -15px -15px 24px rgba(48, 45, 45, 0.5);
+  -ms-box-shadow: inset -15px -15px 24px rgba(48, 45, 45, 0.5);
+  -o-box-shadow: inset -15px -15px 24px rgba(48, 45, 45, 0.5);
+  box-shadow: inset -15px -15px 24px rgba(48, 45, 45, 0.5);
+}
+.pb-3x::after {
+  border-width: 6px;
+}
+
+.pb-4x {
+  width: 160px;
+  height: 160px;
+  font-size: 20px;
+  -webkit-box-shadow: inset -20px -20px 32px rgba(48, 45, 45, 0.5);
+  -moz-box-shadow: inset -20px -20px 32px rgba(48, 45, 45, 0.5);
+  -ms-box-shadow: inset -20px -20px 32px rgba(48, 45, 45, 0.5);
+  -o-box-shadow: inset -20px -20px 32px rgba(48, 45, 45, 0.5);
+  box-shadow: inset -20px -20px 32px rgba(48, 45, 45, 0.5);
+}
+.pb-4x::after {
+  border-width: 8px;
+}
+
+.pb-5x {
+  width: 200px;
+  height: 200px;
+  font-size: 25px;
+  -webkit-box-shadow: inset -25px -25px 40px rgba(48, 45, 45, 0.5);
+  -moz-box-shadow: inset -25px -25px 40px rgba(48, 45, 45, 0.5);
+  -ms-box-shadow: inset -25px -25px 40px rgba(48, 45, 45, 0.5);
+  -o-box-shadow: inset -25px -25px 40px rgba(48, 45, 45, 0.5);
+  box-shadow: inset -25px -25px 40px rgba(48, 45, 45, 0.5);
+}
+.pb-5x::after {
+  border-width: 10px;
+}
+
+.pb-captain {
+  background-image: -webkit-linear-gradient(to bottom, #19438B 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, #19438B 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, #19438B 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, #19438B 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, #19438B 45%, #191919 45%, #191919 55%, transparent 55%);
+}
+
+.pb-cherish {
+  background-color: #D35335;
+  background-image: -webkit-linear-gradient(to bottom, transparent 47%, #565A58 47%, #565A58 52%, transparent 52%), -webkit-radial-gradient(circle, #565A58 35%, transparent 37%);
+  background-image: -moz-linear-gradient(to bottom, transparent 47%, #565A58 47%, #565A58 52%, transparent 52%), -moz-radial-gradient(circle, #565A58 35%, transparent 37%);
+  background-image: -ms-linear-gradient(to bottom, transparent 47%, #565A58 47%, #565A58 52%, transparent 52%), -ms-radial-gradient(circle, #565A58 35%, transparent 37%);
+  background-image: -o-linear-gradient(to bottom, transparent 47%, #565A58 47%, #565A58 52%, transparent 52%), -o-radial-gradient(circle, #565A58 35%, transparent 37%);
+  background-image: linear-gradient(to bottom, transparent 47%, #565A58 47%, #565A58 52%, transparent 52%), radial-gradient(circle, #565A58 35%, transparent 37%);
+  -webkit-background-size: 100% 100%, 90% 70%;
+  -moz-background-size: 100% 100%, 90% 70%;
+  -ms-background-size: 100% 100%, 90% 70%;
+  -o-background-size: 100% 100%, 90% 70%;
+  background-size: 100% 100%, 90% 70%;
+  background-repeat: repeat-x;
+  background-position: 0% 0%, 500% 50%;
+}
+.pb-cherish::after {
+  background-color: #D35335;
+  border-color: #565A58;
+}
+
+.pb-dusk {
+  background-color: #363636;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #C1272D 45%, #C1272D 55%, transparent 55%), -webkit-radial-gradient(circle, #62B753 60%, transparent 62%);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #C1272D 45%, #C1272D 55%, transparent 55%), -moz-radial-gradient(circle, #62B753 60%, transparent 62%);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #C1272D 45%, #C1272D 55%, transparent 55%), -ms-radial-gradient(circle, #62B753 60%, transparent 62%);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #C1272D 45%, #C1272D 55%, transparent 55%), -o-radial-gradient(circle, #62B753 60%, transparent 62%);
+  background-image: linear-gradient(to bottom, transparent 45%, #C1272D 45%, #C1272D 55%, transparent 55%), radial-gradient(circle, #62B753 60%, transparent 62%);
+  -webkit-background-size: 100% 100%, 50% 50%;
+  -moz-background-size: 100% 100%, 50% 50%;
+  -ms-background-size: 100% 100%, 50% 50%;
+  -o-background-size: 100% 100%, 50% 50%;
+  background-size: 100% 100%, 50% 50%;
+  background-position: 0% 0%, -50% -50%;
+}
+.pb-dusk::after {
+  background-color: #363636;
+  border-color: #C1272D;
+}
+
+.pb-gold {
+  background-color: #E79343;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #A2682F 45%, #A2682F 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #A2682F 45%, #A2682F 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #A2682F 45%, #A2682F 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #A2682F 45%, #A2682F 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, transparent 45%, #A2682F 45%, #A2682F 55%, transparent 55%);
+}
+.pb-gold::after {
+  background-color: #E79343;
+  border-color: #A2682F;
+}
+
+.pb-great {
+  background-color: #0D83C0;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -webkit-radial-gradient(circle, #0D83C0 45%, transparent 47%), -webkit-linear-gradient(45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%), -webkit-linear-gradient(-45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -moz-radial-gradient(circle, #0D83C0 45%, transparent 47%), -moz-linear-gradient(45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%), -moz-linear-gradient(-45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -ms-radial-gradient(circle, #0D83C0 45%, transparent 47%), -ms-linear-gradient(45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%), -ms-linear-gradient(-45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -o-radial-gradient(circle, #0D83C0 45%, transparent 47%), -o-linear-gradient(45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%), -o-linear-gradient(-45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%);
+  background-image: linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), radial-gradient(circle, #0D83C0 45%, transparent 47%), linear-gradient(45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%), linear-gradient(-45deg, transparent 51%, #D53431 52%, #D53431 58%, transparent 59%);
+}
+
+.pb-green {
+  background-image: -webkit-linear-gradient(to bottom, #42A750 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, #42A750 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, #42A750 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, #42A750 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, #42A750 45%, #191919 45%, #191919 55%, transparent 55%);
+}
+
+.pb-heavy {
+  background-color: #f6f7f8;
+  background-image: -webkit-radial-gradient(#3A62A8 50%, transparent 51%), -webkit-radial-gradient(#3A62A8 20%, transparent 21%), -webkit-linear-gradient(to bottom, #7E6D64 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -moz-radial-gradient(#3A62A8 50%, transparent 51%), -moz-radial-gradient(#3A62A8 20%, transparent 21%), -moz-linear-gradient(to bottom, #7E6D64 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -ms-radial-gradient(#3A62A8 50%, transparent 51%), -ms-radial-gradient(#3A62A8 20%, transparent 21%), -ms-linear-gradient(to bottom, #7E6D64 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -o-radial-gradient(#3A62A8 50%, transparent 51%), -o-radial-gradient(#3A62A8 20%, transparent 21%), -o-linear-gradient(to bottom, #7E6D64 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: radial-gradient(#3A62A8 50%, transparent 51%), radial-gradient(#3A62A8 20%, transparent 21%), linear-gradient(to bottom, #7E6D64 45%, #191919 45%, #191919 55%, transparent 55%);
+  -webkit-background-size: 75% 75%, 38% 38%, 100% 100%;
+  -moz-background-size: 75% 75%, 38% 38%, 100% 100%;
+  -ms-background-size: 75% 75%, 38% 38%, 100% 100%;
+  -o-background-size: 75% 75%, 38% 38%, 100% 100%;
+  background-size: 75% 75%, 38% 38%, 100% 100%;
+  background-repeat: repeat-x;
+  background-position: -100% -150%, 20% 20%, 0% 0%;
+}
+
+.pb-level {
+  background-color: #f6f7f8;
+  background-image: -webkit-linear-gradient(to bottom, #4F5149 22.5%, #FBD005 22.5%, #FBD005 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, #4F5149 22.5%, #FBD005 22.5%, #FBD005 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, #4F5149 22.5%, #FBD005 22.5%, #FBD005 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, #4F5149 22.5%, #FBD005 22.5%, #FBD005 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, #4F5149 22.5%, #FBD005 22.5%, #FBD005 45%, #191919 45%, #191919 55%, transparent 55%);
+}
+.pb-level::before {
+  font-family: 'AngellaDemo';
+  font-weight: lighter;
+  content: 'V';
+  position: absolute;
+  top: 3%;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  font-size: 2.5em;
+  color: #E85857;
+  text-shadow: -1px -1px 0 #191919, 1px -1px 0 #191919, -1px 1px 0 #191919, 1px 1px 0 #191919;
+}
+
+.pb-love {
+  background-color: #D73C8E;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -webkit-radial-gradient(ellipse, #FFFFFF 55%, transparent 57%), -webkit-radial-gradient(circle closest-side at 60% 43%, #D73C8E 20%, transparent 22%), -webkit-radial-gradient(circle closest-side at 40% 43%, #D73C8E 20%, transparent 22%), -webkit-radial-gradient(circle closest-side at 40% 22%, #F199B2 50%, transparent 52%), -webkit-radial-gradient(circle closest-side at 60% 22%, #F199B2 50%, transparent 52%), -webkit-radial-gradient(circle closest-side at 50% 35%, #F199B2 30%, transparent 32%);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -moz-radial-gradient(ellipse, #FFFFFF 55%, transparent 57%), -moz-radial-gradient(circle closest-side at 60% 43%, #D73C8E 20%, transparent 22%), -moz-radial-gradient(circle closest-side at 40% 43%, #D73C8E 20%, transparent 22%), -moz-radial-gradient(circle closest-side at 40% 22%, #F199B2 50%, transparent 52%), -moz-radial-gradient(circle closest-side at 60% 22%, #F199B2 50%, transparent 52%), -moz-radial-gradient(circle closest-side at 50% 35%, #F199B2 30%, transparent 32%);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -ms-radial-gradient(ellipse, #FFFFFF 55%, transparent 57%), -ms-radial-gradient(circle closest-side at 60% 43%, #D73C8E 20%, transparent 22%), -ms-radial-gradient(circle closest-side at 40% 43%, #D73C8E 20%, transparent 22%), -ms-radial-gradient(circle closest-side at 40% 22%, #F199B2 50%, transparent 52%), -ms-radial-gradient(circle closest-side at 60% 22%, #F199B2 50%, transparent 52%), -ms-radial-gradient(circle closest-side at 50% 35%, #F199B2 30%, transparent 32%);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -o-radial-gradient(ellipse, #FFFFFF 55%, transparent 57%), -o-radial-gradient(circle closest-side at 60% 43%, #D73C8E 20%, transparent 22%), -o-radial-gradient(circle closest-side at 40% 43%, #D73C8E 20%, transparent 22%), -o-radial-gradient(circle closest-side at 40% 22%, #F199B2 50%, transparent 52%), -o-radial-gradient(circle closest-side at 60% 22%, #F199B2 50%, transparent 52%), -o-radial-gradient(circle closest-side at 50% 35%, #F199B2 30%, transparent 32%);
+  background-image: linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), radial-gradient(ellipse, #FFFFFF 55%, transparent 57%), radial-gradient(circle closest-side at 60% 43%, #D73C8E 20%, transparent 22%), radial-gradient(circle closest-side at 40% 43%, #D73C8E 20%, transparent 22%), radial-gradient(circle closest-side at 40% 22%, #F199B2 50%, transparent 52%), radial-gradient(circle closest-side at 60% 22%, #F199B2 50%, transparent 52%), radial-gradient(circle closest-side at 50% 35%, #F199B2 30%, transparent 32%);
+  -webkit-background-size: 100% 100%, 6% 12%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  -moz-background-size: 100% 100%, 6% 12%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  -ms-background-size: 100% 100%, 6% 12%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  -o-background-size: 100% 100%, 6% 12%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  background-size: 100% 100%, 6% 12%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 50% 22%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+
+.pb-lure {
+  background-color: #00AAC4;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -webkit-linear-gradient(90deg, #FFA525 20%, transparent 20%, transparent 40%, #FFA525 40%, #FFA525 60%, transparent 60%, transparent 80%, #FFA525 80%), -webkit-linear-gradient(45deg, transparent 70%, #E85857 72%), -webkit-linear-gradient(-45deg, #E85857 28%, transparent 30%), -webkit-linear-gradient(45deg, #E85857 28%, transparent 30%), -webkit-linear-gradient(-45deg, transparent 70%, #E85857 72%);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -moz-linear-gradient(90deg, #FFA525 20%, transparent 20%, transparent 40%, #FFA525 40%, #FFA525 60%, transparent 60%, transparent 80%, #FFA525 80%), -moz-linear-gradient(45deg, transparent 70%, #E85857 72%), -moz-linear-gradient(-45deg, #E85857 28%, transparent 30%), -moz-linear-gradient(45deg, #E85857 28%, transparent 30%), -moz-linear-gradient(-45deg, transparent 70%, #E85857 72%);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -ms-linear-gradient(90deg, #FFA525 20%, transparent 20%, transparent 40%, #FFA525 40%, #FFA525 60%, transparent 60%, transparent 80%, #FFA525 80%), -ms-linear-gradient(45deg, transparent 70%, #E85857 72%), -ms-linear-gradient(-45deg, #E85857 28%, transparent 30%), -ms-linear-gradient(45deg, #E85857 28%, transparent 30%), -ms-linear-gradient(-45deg, transparent 70%, #E85857 72%);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -o-linear-gradient(90deg, #FFA525 20%, transparent 20%, transparent 40%, #FFA525 40%, #FFA525 60%, transparent 60%, transparent 80%, #FFA525 80%), -o-linear-gradient(45deg, transparent 70%, #E85857 72%), -o-linear-gradient(-45deg, #E85857 28%, transparent 30%), -o-linear-gradient(45deg, #E85857 28%, transparent 30%), -o-linear-gradient(-45deg, transparent 70%, #E85857 72%);
+  background-image: linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), linear-gradient(90deg, #FFA525 20%, transparent 20%, transparent 40%, #FFA525 40%, #FFA525 60%, transparent 60%, transparent 80%, #FFA525 80%), linear-gradient(45deg, transparent 70%, #E85857 72%), linear-gradient(-45deg, #E85857 28%, transparent 30%), linear-gradient(45deg, #E85857 28%, transparent 30%), linear-gradient(-45deg, transparent 70%, #E85857 72%);
+  -webkit-background-size: 100% 100%, 25% 20%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  -moz-background-size: 100% 100%, 25% 20%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  -ms-background-size: 100% 100%, 25% 20%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  -o-background-size: 100% 100%, 25% 20%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  background-size: 100% 100%, 25% 20%, 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 50% 10%, 0% 35%, 0% -65%, 100% -65%, 100% 35%;
+}
+
+.pb-luxury {
+  background-color: #212122;
+  background-image: -webkit-linear-gradient(to bottom, transparent 13%, #FBB03B 13%, #FBB03B 15%, #CA2B3D 15%, #CA2B3D 20%, #FBB03B 20%, #FBB03B 22%, transparent 22%, transparent 45%, #EEECE8 45%, #EEECE8 48%, #FBB03B 48%, #FBB03B 52%, #EEECE8 52%, #EEECE8 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, transparent 13%, #FBB03B 13%, #FBB03B 15%, #CA2B3D 15%, #CA2B3D 20%, #FBB03B 20%, #FBB03B 22%, transparent 22%, transparent 45%, #EEECE8 45%, #EEECE8 48%, #FBB03B 48%, #FBB03B 52%, #EEECE8 52%, #EEECE8 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, transparent 13%, #FBB03B 13%, #FBB03B 15%, #CA2B3D 15%, #CA2B3D 20%, #FBB03B 20%, #FBB03B 22%, transparent 22%, transparent 45%, #EEECE8 45%, #EEECE8 48%, #FBB03B 48%, #FBB03B 52%, #EEECE8 52%, #EEECE8 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, transparent 13%, #FBB03B 13%, #FBB03B 15%, #CA2B3D 15%, #CA2B3D 20%, #FBB03B 20%, #FBB03B 22%, transparent 22%, transparent 45%, #EEECE8 45%, #EEECE8 48%, #FBB03B 48%, #FBB03B 52%, #EEECE8 52%, #EEECE8 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, transparent 13%, #FBB03B 13%, #FBB03B 15%, #CA2B3D 15%, #CA2B3D 20%, #FBB03B 20%, #FBB03B 22%, transparent 22%, transparent 45%, #EEECE8 45%, #EEECE8 48%, #FBB03B 48%, #FBB03B 52%, #EEECE8 52%, #EEECE8 55%, transparent 55%);
+}
+.pb-luxury::after {
+  background-color: #FBB03B;
+  border-color: #EEECE8;
+}
+
+.pb-master {
+  background-color: #f6f7f8;
+  background-image: -webkit-radial-gradient(#B4437F 50%, transparent 52%), -webkit-linear-gradient(to bottom, #58528F 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -moz-radial-gradient(#B4437F 50%, transparent 52%), -moz-linear-gradient(to bottom, #58528F 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -ms-radial-gradient(#B4437F 50%, transparent 52%), -ms-linear-gradient(to bottom, #58528F 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -o-radial-gradient(#B4437F 50%, transparent 52%), -o-linear-gradient(to bottom, #58528F 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: radial-gradient(#B4437F 50%, transparent 52%), linear-gradient(to bottom, #58528F 45%, #191919 45%, #191919 55%, transparent 55%);
+  -webkit-background-size: 75% 75%, 100% 100%;
+  -moz-background-size: 75% 75%, 100% 100%;
+  -ms-background-size: 75% 75%, 100% 100%;
+  -o-background-size: 75% 75%, 100% 100%;
+  background-size: 75% 75%, 100% 100%;
+  background-repeat: repeat-x;
+  background-position: -100% -125%, 0% 0%;
+}
+.pb-master::before {
+  font-family: 'AngellaDemo';
+  font-weight: lighter;
+  content: 'M';
+  position: absolute;
+  top: 3%;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  font-size: 2.5em;
+  color: #FFFFFF;
+  text-shadow: -1px -1px 0 #191919, 1px -1px 0 #191919, -1px 1px 0 #191919, 1px 1px 0 #191919;
+}
+
+.pb-nest {
+  background-color: #4B6E4E;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -webkit-radial-gradient(ellipse, transparent 45%, #AD7550 47%, #AD7550 55%, transparent 57%), -webkit-radial-gradient(ellipse, transparent 48%, #AD7550 50%, #AD7550 55%, transparent 57%);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -moz-radial-gradient(ellipse, transparent 45%, #AD7550 47%, #AD7550 55%, transparent 57%), -moz-radial-gradient(ellipse, transparent 48%, #AD7550 50%, #AD7550 55%, transparent 57%);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -ms-radial-gradient(ellipse, transparent 45%, #AD7550 47%, #AD7550 55%, transparent 57%), -ms-radial-gradient(ellipse, transparent 48%, #AD7550 50%, #AD7550 55%, transparent 57%);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -o-radial-gradient(ellipse, transparent 45%, #AD7550 47%, #AD7550 55%, transparent 57%), -o-radial-gradient(ellipse, transparent 48%, #AD7550 50%, #AD7550 55%, transparent 57%);
+  background-image: linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), radial-gradient(ellipse, transparent 45%, #AD7550 47%, #AD7550 55%, transparent 57%), radial-gradient(ellipse, transparent 48%, #AD7550 50%, #AD7550 55%, transparent 57%);
+  -webkit-background-size: 100% 100%, 120% 80%, 150% 130%;
+  -moz-background-size: 100% 100%, 120% 80%, 150% 130%;
+  -ms-background-size: 100% 100%, 120% 80%, 150% 130%;
+  -o-background-size: 100% 100%, 120% 80%, 150% 130%;
+  background-size: 100% 100%, 120% 80%, 150% 130%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 50% -250%, 50% 200%;
+}
+
+.pb-net {
+  background-color: #50AAA0;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -webkit-repeating-linear-gradient(45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent), -webkit-repeating-linear-gradient(-45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -moz-repeating-linear-gradient(45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent), -moz-repeating-linear-gradient(-45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -ms-repeating-linear-gradient(45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent), -ms-repeating-linear-gradient(-45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -o-repeating-linear-gradient(45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent), -o-repeating-linear-gradient(-45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent);
+  background-image: linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), repeating-linear-gradient(45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent), repeating-linear-gradient(-45deg, transparent 47%, #545454 47%, #545454 54%, transparent 54%, transparent);
+  -webkit-background-size: 100% 100%, 60% 60%, 60% 60%;
+  -moz-background-size: 100% 100%, 60% 60%, 60% 60%;
+  -ms-background-size: 100% 100%, 60% 60%, 60% 60%;
+  -o-background-size: 100% 100%, 60% 60%, 60% 60%;
+  background-size: 100% 100%, 60% 60%, 60% 60%;
+  background-position: 0% 0%, -25% -25%, 125% -25%;
+}
+
+.pb-park {
+  background-color: #f6f7f8;
+  background-image: -webkit-linear-gradient(to bottom, #FCD105 45%, #036AAC 45%, #036AAC 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, #FCD105 45%, #036AAC 45%, #036AAC 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, #FCD105 45%, #036AAC 45%, #036AAC 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, #FCD105 45%, #036AAC 45%, #036AAC 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, #FCD105 45%, #036AAC 45%, #036AAC 55%, transparent 55%);
+}
+.pb-park::after {
+  background-color: #FCD105;
+  border-color: #036AAC;
+}
+
+.pb-premier {
+  background-color: #f6f7f8;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #DD312E 45%, #DD312E 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #DD312E 45%, #DD312E 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #DD312E 45%, #DD312E 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #DD312E 45%, #DD312E 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, transparent 45%, #DD312E 45%, #DD312E 55%, transparent 55%);
+}
+.pb-premier::after {
+  border-color: #DD312E;
+}
+
+.pb-quick {
+  background-color: #6492C3;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), -webkit-linear-gradient(45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), -webkit-linear-gradient(-45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), -webkit-repeating-radial-gradient(transparent, transparent 73%, #FCD105 75%, #FCD105);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), -moz-linear-gradient(45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), -moz-linear-gradient(-45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), -moz-repeating-radial-gradient(transparent, transparent 73%, #FCD105 75%, #FCD105);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), -ms-linear-gradient(45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), -ms-linear-gradient(-45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), -ms-repeating-radial-gradient(transparent, transparent 73%, #FCD105 75%, #FCD105);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), -o-linear-gradient(45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), -o-linear-gradient(-45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), -o-repeating-radial-gradient(transparent, transparent 73%, #FCD105 75%, #FCD105);
+  background-image: linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), linear-gradient(45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), linear-gradient(-45deg, transparent 51%, #FCD105 52%, #FCD105 58%, transparent 59%), repeating-radial-gradient(transparent, transparent 73%, #FCD105 75%, #FCD105);
+  -webkit-background-size: 100% 100%, 85% 85%, 85% 85%, 125% 80%;
+  -moz-background-size: 100% 100%, 85% 85%, 85% 85%, 125% 80%;
+  -ms-background-size: 100% 100%, 85% 85%, 85% 85%, 125% 80%;
+  -o-background-size: 100% 100%, 85% 85%, 85% 85%, 125% 80%;
+  background-size: 100% 100%, 85% 85%, 85% 85%, 125% 80%;
+  background-position: 0% 0%, 35% 70%, 65% 70%, 300% -150%;
+}
+
+.pb-repeat {
+  background-color: #EF4144;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -webkit-radial-gradient(circle, #4F5149 43%, #FCD005 45%, #FCD005 70%, transparent 72%);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -moz-radial-gradient(circle, #4F5149 43%, #FCD005 45%, #FCD005 70%, transparent 72%);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -ms-radial-gradient(circle, #4F5149 43%, #FCD005 45%, #FCD005 70%, transparent 72%);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -o-radial-gradient(circle, #4F5149 43%, #FCD005 45%, #FCD005 70%, transparent 72%);
+  background-image: linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), radial-gradient(circle, #4F5149 43%, #FCD005 45%, #FCD005 70%, transparent 72%);
+  -webkit-background-size: 100% 100%, 50% 50%;
+  -moz-background-size: 100% 100%, 50% 50%;
+  -ms-background-size: 100% 100%, 50% 50%;
+  -o-background-size: 100% 100%, 50% 50%;
+  background-size: 100% 100%, 50% 50%;
+  background-repeat: repeat-x, repeat-y;
+  background-position: 0% 0%, 50% 50%;
+}
+
+.pb-rocket {
+  background-color: #C3242B;
+  background-image: -webkit-linear-gradient(to bottom, #222222 45%, #FFFFFF 45%, #FFFFFF 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, #222222 45%, #FFFFFF 45%, #FFFFFF 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, #222222 45%, #FFFFFF 45%, #FFFFFF 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, #222222 45%, #FFFFFF 45%, #FFFFFF 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, #222222 45%, #FFFFFF 45%, #FFFFFF 55%, transparent 55%);
+}
+.pb-rocket::after {
+  background-color: #222222;
+  border-color: #FFFFFF;
+}
+.pb-rocket::before {
+  font-family: 'AngellaDemo';
+  font-weight: lighter;
+  content: 'R';
+  position: absolute;
+  top: 3%;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  font-size: 2.5em;
+  color: #C3242B;
+  text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+}
+
+.pb-sport {
+  background-color: #E77835;
+  background-image: -webkit-radial-gradient(circle, #ECD35A 10%, transparent 12%), -webkit-linear-gradient(to bottom, transparent 17%, #E77835 17%, #E77835 22%, transparent 22%, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -webkit-radial-gradient(circle, transparent 25%, #ECD35A 27%, #ECD35A 35%, transparent 37%);
+  background-image: -moz-radial-gradient(circle, #ECD35A 10%, transparent 12%), -moz-linear-gradient(to bottom, transparent 17%, #E77835 17%, #E77835 22%, transparent 22%, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -moz-radial-gradient(circle, transparent 25%, #ECD35A 27%, #ECD35A 35%, transparent 37%);
+  background-image: -ms-radial-gradient(circle, #ECD35A 10%, transparent 12%), -ms-linear-gradient(to bottom, transparent 17%, #E77835 17%, #E77835 22%, transparent 22%, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -ms-radial-gradient(circle, transparent 25%, #ECD35A 27%, #ECD35A 35%, transparent 37%);
+  background-image: -o-radial-gradient(circle, #ECD35A 10%, transparent 12%), -o-linear-gradient(to bottom, transparent 17%, #E77835 17%, #E77835 22%, transparent 22%, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), -o-radial-gradient(circle, transparent 25%, #ECD35A 27%, #ECD35A 35%, transparent 37%);
+  background-image: radial-gradient(circle, #ECD35A 10%, transparent 12%), linear-gradient(to bottom, transparent 17%, #E77835 17%, #E77835 22%, transparent 22%, transparent 45%, #191919 45%, #191919 55%, #f6f7f8 55%), radial-gradient(circle, transparent 25%, #ECD35A 27%, #ECD35A 35%, transparent 37%);
+  -webkit-background-size: 50% 50%, 100%, 50% 50%;
+  -moz-background-size: 50% 50%, 100%, 50% 50%;
+  -ms-background-size: 50% 50%, 100%, 50% 50%;
+  -o-background-size: 50% 50%, 100%, 50% 50%;
+  background-size: 50% 50%, 100%, 50% 50%;
+  background-repeat: no-repeat, repeat-x, no-repeat;
+  background-position: 50% -12.5%, 0% 0%, 50% -12.5%;
+}
+
+.pb-stone {
+  background-color: #E2D8B6;
+  background-image: -webkit-linear-gradient(to bottom, transparent 45%, #86806B 45%, #86806B 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, transparent 45%, #86806B 45%, #86806B 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, transparent 45%, #86806B 45%, #86806B 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, transparent 45%, #86806B 45%, #86806B 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, transparent 45%, #86806B 45%, #86806B 55%, transparent 55%);
+}
+.pb-stone::after {
+  background-color: #E2D8B6;
+  border-color: #86806B;
+}
+
+.pb-timer {
+  background-color: #f6f7f8;
+  background-image: -webkit-linear-gradient(to left, transparent 45%, #E15050 45%, #E15050 55%, transparent 55%), -webkit-radial-gradient(#E15050 48%, transparent 51.5%), -webkit-radial-gradient(#4E5048 50%, transparent 51%), -webkit-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), -webkit-radial-gradient(ellipse, transparent 49%, #E15050 50%, #E15050 59%, transparent 60%);
+  background-image: -moz-linear-gradient(to left, transparent 45%, #E15050 45%, #E15050 55%, transparent 55%), -moz-radial-gradient(#E15050 48%, transparent 51.5%), -moz-radial-gradient(#4E5048 50%, transparent 51%), -moz-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), -moz-radial-gradient(ellipse, transparent 49%, #E15050 50%, #E15050 59%, transparent 60%);
+  background-image: -ms-linear-gradient(to left, transparent 45%, #E15050 45%, #E15050 55%, transparent 55%), -ms-radial-gradient(#E15050 48%, transparent 51.5%), -ms-radial-gradient(#4E5048 50%, transparent 51%), -ms-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), -ms-radial-gradient(ellipse, transparent 49%, #E15050 50%, #E15050 59%, transparent 60%);
+  background-image: -o-linear-gradient(to left, transparent 45%, #E15050 45%, #E15050 55%, transparent 55%), -o-radial-gradient(#E15050 48%, transparent 51.5%), -o-radial-gradient(#4E5048 50%, transparent 51%), -o-linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), -o-radial-gradient(ellipse, transparent 49%, #E15050 50%, #E15050 59%, transparent 60%);
+  background-image: linear-gradient(to left, transparent 45%, #E15050 45%, #E15050 55%, transparent 55%), radial-gradient(#E15050 48%, transparent 51.5%), radial-gradient(#4E5048 50%, transparent 51%), linear-gradient(to bottom, transparent 45%, #191919 45%, #191919 55%, transparent 55%), radial-gradient(ellipse, transparent 49%, #E15050 50%, #E15050 59%, transparent 60%);
+  -webkit-background-size: 100% 25%, 14% 15%, 125% 89%, 100% 100%, 130% 175%;
+  -moz-background-size: 100% 25%, 14% 15%, 125% 89%, 100% 100%, 130% 175%;
+  -ms-background-size: 100% 25%, 14% 15%, 125% 89%, 100% 100%, 130% 175%;
+  -o-background-size: 100% 25%, 14% 15%, 125% 89%, 100% 100%, 130% 175%;
+  background-size: 100% 25%, 14% 15%, 125% 89%, 100% 100%, 130% 175%;
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 50% 20%, 50% -500%, 0% 0%, 50% 25%;
+}
+
+.pb-typing {
+  background-color: #FD762C;
+  background-image: -webkit-linear-gradient(to bottom, #31B0FF 45%, #191919 45%, #191919 55%, transparent 55%), -webkit-linear-gradient(to left, transparent 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -moz-linear-gradient(to bottom, #31B0FF 45%, #191919 45%, #191919 55%, transparent 55%), -moz-linear-gradient(to left, transparent 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -ms-linear-gradient(to bottom, #31B0FF 45%, #191919 45%, #191919 55%, transparent 55%), -ms-linear-gradient(to left, transparent 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: -o-linear-gradient(to bottom, #31B0FF 45%, #191919 45%, #191919 55%, transparent 55%), -o-linear-gradient(to left, transparent 45%, #191919 45%, #191919 55%, transparent 55%);
+  background-image: linear-gradient(to bottom, #31B0FF 45%, #191919 45%, #191919 55%, transparent 55%), linear-gradient(to left, transparent 45%, #191919 45%, #191919 55%, transparent 55%);
+}
+
+.pb-ultra {
+  background-color: #373939;
+  background-image: -webkit-linear-gradient(to top, #f6f7f8 50%, #f6f7f8 73%, #191919 73%, #191919 78%, transparent 78%, transparent 95%, #F4C20D 90%, #F4C20D), -webkit-linear-gradient(to left, transparent 15%, #F4C20D 15%, #F4C20D 25%, transparent 25%, transparent 75%, #F4C20D 75%, #F4C20D 85%, transparent 85%);
+  background-image: -moz-linear-gradient(to top, #f6f7f8 50%, #f6f7f8 73%, #191919 73%, #191919 78%, transparent 78%, transparent 95%, #F4C20D 90%, #F4C20D), -moz-linear-gradient(to left, transparent 15%, #F4C20D 15%, #F4C20D 25%, transparent 25%, transparent 75%, #F4C20D 75%, #F4C20D 85%, transparent 85%);
+  background-image: -ms-linear-gradient(to top, #f6f7f8 50%, #f6f7f8 73%, #191919 73%, #191919 78%, transparent 78%, transparent 95%, #F4C20D 90%, #F4C20D), -ms-linear-gradient(to left, transparent 15%, #F4C20D 15%, #F4C20D 25%, transparent 25%, transparent 75%, #F4C20D 75%, #F4C20D 85%, transparent 85%);
+  background-image: -o-linear-gradient(to top, #f6f7f8 50%, #f6f7f8 73%, #191919 73%, #191919 78%, transparent 78%, transparent 95%, #F4C20D 90%, #F4C20D), -o-linear-gradient(to left, transparent 15%, #F4C20D 15%, #F4C20D 25%, transparent 25%, transparent 75%, #F4C20D 75%, #F4C20D 85%, transparent 85%);
+  background-image: linear-gradient(to top, #f6f7f8 50%, #f6f7f8 73%, #191919 73%, #191919 78%, transparent 78%, transparent 95%, #F4C20D 90%, #F4C20D), linear-gradient(to left, transparent 15%, #F4C20D 15%, #F4C20D 25%, transparent 25%, transparent 75%, #F4C20D 75%, #F4C20D 85%, transparent 85%);
+  -webkit-background-size: 100% 200%;
+  -moz-background-size: 100% 200%;
+  -ms-background-size: 100% 200%;
+  -o-background-size: 100% 200%;
+  background-size: 100% 200%;
+}
+
+/*# sourceMappingURL=pokeballs.css.map */

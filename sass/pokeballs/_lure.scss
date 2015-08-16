@@ -1,0 +1,48 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        $color-down 55%
+    ),
+    linear-gradient(
+        90deg,
+        $color-lure-yellow 20%,
+        transparent 20%,
+        transparent 40%,
+        $color-lure-yellow 40%,
+        $color-lure-yellow 60%,
+        transparent 60%,
+        transparent 80%,
+        $color-lure-yellow 80%
+    ),
+    linear-gradient(
+        45deg,
+        transparent 70%,
+        $color-lure-red 72%
+    ),
+    linear-gradient(
+        -45deg,
+        $color-lure-red 28%,
+        transparent 30%
+    ),
+    linear-gradient(
+        45deg,
+        $color-lure-red 28%,
+        transparent 30%
+    ),
+    linear-gradient(
+        -45deg,
+        transparent 70%,
+        $color-lure-red 72%
+    )
+);
+
+.#{$pb-namespace}-lure{
+    background-color: $color-lure-blue;
+    @include css3-gradients($gradients);
+    @include background-size(#{100% 100%, 25% 20%, 50% 50%, 50% 50%, 50% 50%, 50% 50%});
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 50% 10%, 0% 35%, 0% -65%, 100% -65%, 100% 35%;
+}

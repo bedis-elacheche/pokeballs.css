@@ -1,0 +1,18 @@
+$gradients: ( 
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-stone-sep 45%,
+        $color-stone-sep 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}-stone{
+    background-color: $color-stone;
+    @include css3-gradients($gradients);
+    &::after {
+        background-color: $color-stone;
+        border-color: $color-stone-sep;
+    }
+}

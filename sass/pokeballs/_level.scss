@@ -1,0 +1,33 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        $color-level-grey 22.5%,
+        $color-level-yellow 22.5%,
+        $color-level-yellow 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}-level{
+    background-color: $color-down;
+    @include css3-gradients($gradients);
+    &::before{
+        font-family: 'AngellaDemo';
+        font-weight: lighter;
+        content: 'V';
+        position: absolute;
+        top: 3%;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+        font-size: 2.5em;
+        color: $color-level-red;
+        text-shadow:
+         -1px -1px 0 $color-sep,  
+          1px -1px 0 $color-sep,
+          -1px 1px 0 $color-sep,
+           1px 1px 0 $color-sep;
+    }
+}

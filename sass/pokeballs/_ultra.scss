@@ -1,0 +1,30 @@
+$gradients: (
+    linear-gradient(
+        to top,
+        $color-down 50%,
+        $color-down 73%,
+        $color-sep 73%,
+        $color-sep 78%,
+        transparent 78%,
+        transparent 95%,
+        $color-ultra-yellow 90%,
+        $color-ultra-yellow
+    ),
+    linear-gradient(
+        to left,
+        transparent 15%,
+        $color-ultra-yellow 15%,
+        $color-ultra-yellow 25%,
+        transparent 25%,
+        transparent 75%,
+        $color-ultra-yellow 75%,
+        $color-ultra-yellow 85%,
+        transparent 85%
+    )
+);
+
+.#{$pb-namespace}-ultra{
+    background-color: $color-ultra-grey;
+    @include css3-gradients($gradients);
+    @include background-size(#{100% 200%});
+}

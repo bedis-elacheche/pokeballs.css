@@ -1,0 +1,18 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        $color-park-yellow 45%,
+        $color-park-blue 45%,
+        $color-park-blue 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}-park{
+    background-color: $color-down;
+    @include css3-gradients($gradients);
+    &::after {
+        background-color: $color-park-yellow;
+        border-color: $color-park-blue;
+    }
+}

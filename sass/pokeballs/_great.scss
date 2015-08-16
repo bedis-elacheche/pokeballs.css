@@ -1,0 +1,33 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        $color-down 55%
+    ),
+    radial-gradient(
+        circle,
+        $color-great-blue 45%,
+        transparent 47%
+    ),
+    linear-gradient(
+        45deg,
+        transparent 51%,
+        $color-great-red 52%,
+        $color-great-red 58%,
+        transparent 59%
+    ),
+    linear-gradient(
+        -45deg,
+        transparent 51%,
+        $color-great-red 52%,
+        $color-great-red 58%,
+        transparent 59%
+    )
+);
+
+.#{$pb-namespace}-great{
+    background-color: $color-great-blue;
+    @include css3-gradients($gradients);
+}

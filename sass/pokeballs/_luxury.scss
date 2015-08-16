@@ -1,0 +1,30 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        transparent 13%,
+        $color-luxury-yellow 13%,
+        $color-luxury-yellow 15%,
+        $color-luxury-red 15%,
+        $color-luxury-red 20%,
+        $color-luxury-yellow 20%,
+        $color-luxury-yellow 22%,
+        transparent 22%,
+        transparent 45%,
+        $color-luxury-gray 45%,
+        $color-luxury-gray 48%,
+        $color-luxury-yellow 48%,
+        $color-luxury-yellow 52%,
+        $color-luxury-gray 52%,
+        $color-luxury-gray 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}-luxury{
+    background-color: $color-luxury-grey;
+    @include css3-gradients($gradients);
+    &::after {
+        background-color: $color-luxury-yellow;
+        border-color: $color-luxury-gray;
+    }
+}

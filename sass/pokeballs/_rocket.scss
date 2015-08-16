@@ -1,0 +1,35 @@
+$gradients: ( 
+    linear-gradient(
+        to bottom,
+        $color-rocket-grey 45%,
+        $color-white 45%,
+        $color-white 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}-rocket{
+    background-color: $color-rocket-red;
+    @include css3-gradients($gradients);
+    &::after {
+        background-color: $color-rocket-grey;
+        border-color: $color-white;
+    }
+    &::before{
+        font-family: 'AngellaDemo';
+        font-weight: lighter;
+        content: 'R';
+        position: absolute;
+        top: 3%;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+        font-size: 2.5em;
+        color: $color-rocket-red;
+        text-shadow:
+         -1px -1px 0 $color-white,  
+          1px -1px 0 $color-white,
+          -1px 1px 0 $color-white,
+           1px 1px 0 $color-white;
+    }
+}

@@ -1,0 +1,31 @@
+$gradients: ( 
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        $color-down 55%
+    ),
+    radial-gradient(
+        ellipse,
+        transparent 45%,
+        $color-nest-brown 47%,
+        $color-nest-brown 55%,
+        transparent 57%
+    ),
+    radial-gradient(
+        ellipse,
+        transparent 48%,
+        $color-nest-brown 50%,
+        $color-nest-brown 55%,
+        transparent 57%
+    )
+);
+
+.#{$pb-namespace}-nest{
+    background-color: $color-nest-green;
+    @include css3-gradients($gradients);
+    @include background-size(#{100% 100%, 120% 80%, 150% 130%});
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 50% -250%, 50% 200%;
+}

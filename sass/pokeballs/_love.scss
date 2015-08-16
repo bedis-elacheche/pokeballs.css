@@ -1,0 +1,47 @@
+$gradients: ( 
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        $color-down 55%
+    ),
+    radial-gradient(
+        ellipse,
+        $color-white 55%,
+        transparent 57%
+    ),
+    radial-gradient(
+        circle closest-side at 60% 43%,
+        $color-love-cerise 20%,
+        transparent 22%
+    ),
+    radial-gradient(
+        circle closest-side at 40% 43%,
+        $color-love-cerise 20%,
+        transparent 22%
+    ),
+    radial-gradient(
+        circle closest-side at 40% 22%,
+        $color-love-wewak 50%,
+        transparent 52%
+    ),
+    radial-gradient(
+        circle closest-side at 60% 22%,
+        $color-love-wewak 50%,
+        transparent 52%
+    ),
+    radial-gradient(
+        circle closest-side at 50% 35%,
+        $color-love-wewak 30%,
+        transparent 32%
+    )
+);
+
+.#{$pb-namespace}-love{
+    background-color: $color-love-cerise;
+    @include css3-gradients($gradients);
+    @include background-size(#{100% 100%, 6% 12%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%});
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 50% 22%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}

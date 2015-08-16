@@ -1,0 +1,25 @@
+$gradients: (
+    radial-gradient(
+        $color-heavy-blue 50%,
+        transparent 51%
+    ),
+    radial-gradient(
+        $color-heavy-blue 20%,
+        transparent 21%
+    ),
+    linear-gradient(
+        to bottom,
+        $color-heavy-grey 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}-heavy{
+    background-color: $color-down;
+    @include css3-gradients($gradients);
+    @include background-size(#{75% 75%, 38% 38%, 100% 100%});
+    background-repeat: repeat-x;
+    background-position: -100% -150%, 20% 20%, 0% 0%;
+}

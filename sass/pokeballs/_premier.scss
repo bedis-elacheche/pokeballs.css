@@ -1,0 +1,17 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-premier-red 45%,
+        $color-premier-red 55%,
+        transparent 55%
+    )
+);
+
+.#{$pb-namespace}-premier{
+    background-color: $color-down;
+    @include css3-gradients($gradients);
+    &::after{
+        border-color: $color-premier-red;
+    }
+}

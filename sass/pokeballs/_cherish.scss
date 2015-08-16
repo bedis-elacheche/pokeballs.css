@@ -1,0 +1,26 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        transparent 47%,
+        $color-cherish-grey 47%,
+        $color-cherish-grey 52%,
+        transparent 52%
+    ),
+    radial-gradient(
+        circle,
+        $color-cherish-grey 35%,
+        transparent 37%
+    )
+);
+
+.#{$pb-namespace}-cherish{
+    background-color: $color-cherish-red;
+    @include css3-gradients($gradients);
+    @include background-size(#{100% 100%, 90% 70%});
+    background-repeat: repeat-x;
+    background-position: 0% 0%, 500% 50%;
+    &::after {
+        background-color: $color-cherish-red;
+        border-color: $color-cherish-grey;
+    }
+}

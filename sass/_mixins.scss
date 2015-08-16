@@ -1,0 +1,49 @@
+@mixin css3-prefix($property, $value, $vendors: webkit moz ms o default) {
+    @each $vendor in $vendors {
+        @if ($vendor == 'default') {         #{$property}: $value; }
+         @if ($vendor == 'webkit') { -webkit-#{$property}: $value; }
+            @if ($vendor == 'moz') {    -moz-#{$property}: $value; }
+             @if ($vendor == 'ms') {     -ms-#{$property}: $value; }
+              @if ($vendor == 'o') {      -o-#{$property}: $value; }
+    }
+}
+
+@mixin css3-gradients($gradients, $vendors: webkit moz ms o default) {
+    @each $vendor in $vendors {
+        $value : ();
+        $prefix: if($vendor == 'default', '', #{ '-' + $vendor + '-' });
+        @each $gradient in $gradients {
+            $value : append($value, #{ $prefix + $gradient}, 'comma');
+        }
+        background-image: $value;
+    }
+}
+
+@mixin background-size($size, $vendors: webkit moz ms o default) {
+    @include css3-prefix('background-size', $size, $vendors);
+}
+
+@mixin border-radius($radius, $vendors: webkit moz ms o default) {
+    @include css3-prefix('border-radius', $radius, $vendors);
+}
+
+@mixin box-shadow($x, $y, $blur, $color, $inset: false, $vendors: webkit moz ms o default) {
+    @if $inset {
+        @include css3-prefix('box-shadow', inset $x $y $blur $color, $vendors);
+    }
+    @else {
+        @include css3-prefix('box-shadow', $x $y $blur $color, $vendors);
+    }
+}
+
+@mixin transform($transforms, $vendors: webkit moz ms o default) {
+    @include css3-prefix('transform', $transforms, $vendors);
+}
+
+@mixin transform-origin ($origin, $vendors: webkit moz ms o default) {
+    @include css3-prefix('transform-origin', $origin, $vendors);
+}
+
+@mixin animation($str, $vendors: webkit moz ms o default) {
+    @include css3-prefix('animation', $str, $vendors);
+}

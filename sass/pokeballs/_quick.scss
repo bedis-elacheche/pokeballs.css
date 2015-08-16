@@ -1,0 +1,36 @@
+$gradients: (
+    linear-gradient(
+        to bottom,
+        transparent 45%,
+        $color-sep 45%,
+        $color-sep 55%,
+        transparent 55%
+    ),
+    linear-gradient(
+        45deg,
+        transparent 51%,
+        $color-quick-yellow 52%,
+        $color-quick-yellow 58%,
+        transparent 59%
+    ),
+    linear-gradient(
+        -45deg,
+        transparent 51%,
+        $color-quick-yellow 52%,
+        $color-quick-yellow 58%,
+        transparent 59%
+    ),
+    repeating-radial-gradient(
+        transparent,
+        transparent 73%,
+        $color-quick-yellow 75%,
+        $color-quick-yellow
+    )
+);
+
+.#{$pb-namespace}-quick{
+    background-color: $color-quick-blue;
+    @include css3-gradients($gradients);
+    @include background-size(#{100% 100%, 85% 85%, 85% 85%, 125% 80%});
+    background-position: 0% 0%, 35% 70%, 65% 70%, 300% -150%;
+}

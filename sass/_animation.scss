@@ -1,0 +1,32 @@
+
+@-webkit-keyframes rotate {
+      0% { @include transform(rotate(-20deg), webkit); }
+     50% { @include transform(rotate( 20deg), webkit); }
+    100% { @include transform(rotate(-20deg), webkit); } 
+}
+@-moz-keyframes rotate {
+      0% { @include transform(rotate(-20deg), moz); }
+     50% { @include transform(rotate( 20deg), moz); }
+    100% { @include transform(rotate(-20deg), moz); }
+}
+@-ms-keyframes rotate {
+      0% { @include transform(rotate(-20deg), ms); }
+     50% { @include transform(rotate( 20deg), ms); }
+    100% { @include transform(rotate(-20deg), ms); }
+}
+@-o-keyframes rotate {
+      0% { @include transform(rotate(-20deg), o); }
+     50% { @include transform(rotate( 20deg), o); }
+    100% { @include transform(rotate(-20deg), o); }
+}
+@keyframes rotate {
+      0% { @include transform(rotate(-20deg), official); }
+     50% { @include transform(rotate( 20deg), official); }
+    100% { @include transform(rotate(-20deg), official); }
+} 
+
+.#{$pb-namespace}-rotate {
+    @include animation(rotate 2s cubic-bezier(0.68,-0.55,0.27,1.55) infinite forwards);
+    @include transform-origin(50% 100%);
+}
+
